@@ -43,7 +43,7 @@ a {
   right: 0;
   position: absolute;
   width: 0%;
-  height: 0.5px;
+  height: 1px;
   background-color: #fff;
   -webkit-transition: 0.4s;
   transition: 0.4s;
