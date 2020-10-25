@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="slick-theme.css">
+    <link rel="stylesheet" href="../main/reset.css">
+    <link rel="stylesheet" href="../main/style.css">
+    <link rel="stylesheet" href="pets-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+    <title>Our pets</title>
+</head>
+
+<body>
+    <div class="popup"></div>
+    <div class="popup-modal" id="popup-modal"></div>
+    <div class="modal" id="modal">
+        <img src="" alt="" class="modal-img">
+        <div class="modal-content">
+            <h3 class="modal-title"></h3>
+            <h4 class="modal-subtitle">Dog - Labrador</h4>
+            <p class="modal-description">Jennifer is a sweet 2 months old Labrador
+                that is patiently waiting to find a new forever home. This girl really
+                enjoys being able to go outside to run and play, but won't hesitate to play
+                up a storm in the house if she has all of her favorite toys.</p>
+            <ul class="modal-list">
+                <li class="modal-list__item"><b>Age:</b></li>
+                <li class="modal-list__item"><b>Inoculations:</b></li>
+                <li class="modal-list__item"><b>Diseases:</b></li>
+                <li class="modal-list__item"><b>Parasites:</b></li>
+            </ul>
+        </div>
+        <div class="modal-btn" id="modal-btn"></div>
+    </div>
+    <header>
+        <div class="container">
+            <nav class="header-nav">
+                <div class="logo-mobile">
+                    <a class="logo" href="../../index.html">
+                        <p class="logo-title">Cozy House</p>
+                        <p class="logo-description arial">Shelter for pets in Boston</p>
+                    </a>
+                    <h1>Cozy House</h1>
+                    <div class="burger-wrapper">
+                        <div class="burger"></div>
+                    </div>
+                </div>
+                <ul class="navbar">
+                    <li class="navbar-item">
+                        <a href="../../index.html" class="navbar__link arial">About the shelter</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="pets.html" class="navbar__link arial active">Our pets</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" onclick="return false" class="navbar__link arial disable">Help the shelter</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" onclick="return false" class="navbar__link arial disable">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="grey-background">
+        <div class="container">
+            <div class="ourfriends">
+                <h3 class="ourfriends-title">Our friends who<br>
+                    are looking for a house</h3>
+                <div class="catalog">
+                </div>
+                <div class="control-panel">
+                    <div class="first control-btns" id="first-page"><i class="arrow">
+                            << </i>
+                    </div>
+                    <div class="previous buttons control-btns" id="previous-page"><i class="arrow">
+                            < </i>
+                    </div>
+                    <div class="current-page" id="current-page">1</div>
+                    <div class="next buttons control-btns" id="next-page"><i class="arrow">></i></div>
+                    <div class="last control-btns" id="last-page"><i class="arrow">>></i></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="contacts-column">
+                    <h3 class="footer-title">For questions and suggestions</h3>
+                    <a href="mailto: email@shelter.com" class="email contacts"><object type="image/svg+xml"
+                            data="../../assets/icons/mail.svg" class="contact-icon"></object>
+                        email@shelter.com</a>
+                    <a href="tel: +13 674 567 75 54 " class="phone contacts"><object type="image/svg+xml"
+                            data="../../assets/icons/phone.svg" class="contact-icon"></object>
+                        +13 674 567 75 54</a>
+                </div>
+                <div class="adress-column">
+                    <h3 class="footer-title">We are waiting for your visit</h3>
+                    <a href="https://goo.gl/maps/4vbVzsWjLBw7YjXY9" target="_blank" class="adress contacts"><object
+                            type="image/svg+xml" data="../../assets/icons/pin.svg" class="contact-icon"></object>
+                        1 Central Street, Boston (entrance from the store)</a>
+                    <a href="https://goo.gl/maps/A9aWYzb3G65F85Eh8" target="_blank" class="adress contacts"><object
+                            type="image/svg+xml" data="../../assets/icons/pin.svg" class="contact-icon"></object>
+                        18 South Park, London </a>
+                </div>
+                <img src="../../assets/images/footer-puppy.png" alt="Puppy" class="footer-img">
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="pets-main.js"></script>
+</body>
+
+</html>

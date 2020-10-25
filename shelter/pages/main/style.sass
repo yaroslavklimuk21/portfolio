@@ -1,0 +1,849 @@
+body
+    font-family: 'Georgia', sans-serif
+    box-sizing: border-box
+.background
+    background: url('../../assets/images/noise_transparent@2x.png'), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20
+.overflow
+    overflow: hidden
+h1
+    display: none
+h3
+    font-size: 35px
+    font-weight: normal
+    line-height: 130%
+    letter-spacing: 2px
+    color: #545454
+h4
+    font-size: 20px
+    line-height: 23px
+    color: #545454
+    font-weight: normal
+header
+    width: 100%
+    margin: 0 auto
+.container
+    max-width: 1200px
+    width: 100%
+    margin: 0 auto
+.arial
+    font-family: 'Arial',serif
+.header-nav
+    display: flex
+    flex-direction: row
+    width: 100%
+    justify-content: space-between
+    padding-top: 58px
+    align-items: center
+.logo-title
+    font-size: 32px
+    line-height: 36px
+    letter-spacing: 1.8px
+    color: #F1CDB3
+    padding-bottom: 7px
+    padding-top: 2px
+.logo-description
+    font-size: 13px
+    line-height: 15px
+    letter-spacing: 1.3px
+    color: #fff
+    font-weight: 400
+    padding-left: 4px
+.navbar
+    display: flex
+    &-item
+        padding-right: 36px
+        &:last-child
+            padding-right: 0
+    &__link
+        text-decoration: none
+        color: #CDCDCD
+        font-size: 15px
+        line-height: 160%
+        position: relative
+        &:hover
+            color: #FAFAFA
+        &::before
+            content: ''
+            bottom: -6px
+            position: absolute
+            width: 100%
+            visibility: hidden
+            height: 3px
+            background-color: #F1CDB3
+            transition: 0.1s
+        &:active::before
+            visibility: visible
+.active
+    color: #fff
+    &::before
+        content: ''
+        bottom: -7px
+        position: absolute
+        width: 100%
+        height: 3px
+        visibility: visible
+        background-color: #F1CDB3
+        transition: 0.1s
+.white-background
+    background-color: #fff
+.main
+    margin: 0 auto
+    width: 100%
+.notonly
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    padding-top: 60px
+    &-text
+        padding-top: 165px
+    &-title
+        font-size: 44px
+        line-height: 130%
+        font-weight: 400
+        color: #fff
+        max-width: 310px
+        width: 100%
+        padding-bottom: 41px
+    &-description
+        font-size: 15px
+        line-height: 160%
+        color: #CDCDCD
+        padding-bottom: 61px
+        max-width: 460px
+        width: 100%
+.btn
+    text-decoration: none
+    color: #292929
+    background-color: #F1CDB3
+    padding: 17px 43px
+    border-radius: 26px
+    font-size: 17px
+    letter-spacing: 1.2px
+    transition: 0.3s
+    outline: none
+    &:hover
+        background-color: #FDDCC4
+        cursor: pointer
+.btn-o
+    font-size: 17px
+    line-height: 130%
+    letter-spacing: 1px
+    color: #292929
+    padding: 15px 43px
+    border: 2px solid #FDDCC4
+    border-radius: 100px
+    background-color: #fff
+    text-align: center
+    transition: 0.3s
+    text-decoration: none
+    outline: none
+    font-family: 'Georgia', sans-serif
+    &:hover
+        background-color: #FDDCC4
+        cursor: pointer
+.about
+    display: flex
+    justify-content: center
+    align-items: center
+    padding-top: 80px
+    padding-bottom: 100px
+    &-text
+        display: flex
+        flex-direction: column
+        padding-left: 120px
+    &-title
+        max-width: 360px
+        width: 100%
+        padding-bottom: 25px
+    &-description
+        max-width: 430px
+        width: 100%
+        color: #4C4C4C
+        line-height: 160%
+        font-size: 15px
+.first-block
+    padding-bottom: 25px
+
+.ourfriends
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+    width: 100%
+    padding-top: 80px
+    padding-bottom: 100px
+    min-width: 0
+    &>.btn
+        max-width: 260px
+        margin: 0 auto
+    &-title
+        padding-bottom: 60px
+        max-width: 400px
+        width: 100%
+        margin: 0 auto
+    &-slider
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        width: 100%
+        background-color: #f6f6f6
+        padding-bottom: 51px
+.slide
+    display: flex !important
+    justify-content: space-between
+    width: 990px !important
+    min-width: 0
+.card
+    background-color: #fafafa
+    max-width: 270px
+    width: 100%
+    border-radius: 10px
+    transition: 0.3s
+    &-wrapper
+        padding: 0
+        padding-bottom: 28px
+    &-title
+        padding-bottom: 30px
+        letter-spacing: 1px
+    &-img
+        padding-bottom: 27px
+    &:nth-child(2)
+        margin: 0 40px
+    &:hover
+        cursor: pointer
+        -webkit-box-shadow: 10px 10px 10px -2px rgba(0,0,0,0.2)
+        -moz-box-shadow: 10px 10px 10px -2px rgba(0,0,0,0.2)
+        box-shadow: 10px 10px 10px -2px rgba(0,0,0,0.2)
+.left-arrow, .right-arrow
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 48px
+    height: 48px
+    border: 2px solid #FDDCC4
+    border-radius: 100px
+    transition: 0.3s
+    &:hover
+        background-color: #FDDCC4
+        cursor: pointer
+.slick
+    overflow: hidden
+    &-track
+        display: flex
+        overflow: hidden
+    &-list
+        overflow: hidden
+        box-sizing: border-box
+        width: 1020px !important
+        padding: 0 !important
+        margin: 0 auto
+    &-slide
+        width: 990px !important
+        margin: 0 42px
+        padding-bottom: 10px
+    &-arrow
+        position: relative !important
+        top: 26px
+    &-next
+        right: 2px !important
+    &-prev
+        left: 2px !important
+
+.slick-next, .slick-prev
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 48px
+    height: 48px
+    border: 2px solid #FDDCC4
+    border-radius: 100px
+    transition: 0.3s
+    color: #000
+    background-color: transparent
+    &:hover
+        background-color: #FDDCC4
+        cursor: pointer
+button:active, button:focus
+    outline: none
+.grey-background
+    background-color: #f6f6f6
+.help
+    display: flex
+    justify-content: center
+    flex-direction: column
+    text-align: center
+    padding-top: 80px
+    padding-bottom: 100px
+    width: 100%
+    &-title
+        padding-bottom: 60px
+        max-width: 310px
+        margin: 0 auto
+    &-features
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: center
+        &__item
+            margin: 0 60px
+        &__item:nth-child(n+6):nth-child(-n+9)
+            margin-top: 56px
+        &__img
+            padding-bottom: 27px
+        &__title
+            letter-spacing: 1px
+
+.donation
+    display: flex
+    justify-content: center
+    align-items: center
+    padding-top: 83px
+    padding-bottom: 60px
+    &-text
+        padding-left: 20px
+        padding-bottom: 35px
+    &-text
+        &__title
+            max-width: 300px
+            padding-bottom: 20px
+        &__subtitle
+            padding-bottom: 20px
+            font-weight: normal
+            letter-spacing: 0.5px
+    &-img
+        padding-bottom: 40px
+        padding-right: 10px
+.card-number
+    border-radius: 10px
+    font-size: 20px
+    line-height: 115%
+    padding: 10px 16px
+    display: flex
+    align-items: center
+    max-width: 320px
+.credit-card
+    padding-right: 15px
+.paragraph-lite
+    max-width: 380px
+    padding-top: 23px
+    font-size: 12px
+    font-style: italic
+    color: #B2B2B2
+    line-height: 18px
+
+footer
+    width: 100%
+    background: url('../../assets/images/noise_transparent@2x.png'), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20
+.footer
+    display: flex
+    align-items: inherit
+    justify-content: space-between
+    padding-top: 35px
+    position: relative
+    &-title
+        color: #fff
+        font-weight: normal
+        max-width: 300px
+        z-index: 0
+    &-img
+        z-index: 0
+.contacts-column, .adress-column
+    position: relative
+    bottom: 20px
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    z-index: 0
+.adress-column
+    width: 321px
+.contacts
+    text-decoration: none
+    color: #F1CDB3
+    font-size: 20px
+    font-weight: normal
+    letter-spacing: 1.2px
+    display: flex
+    align-items: center
+.contact-icon
+    padding-right: 20px
+.burger-wrapper
+    width: 30px
+    height: 30px
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    display: none
+.burger
+    position: relative
+    width: 30px
+    height: 2px
+    top: 2px
+    background-color: #F1CDB3
+    cursor: pointer
+    transition: transform ease-out 0.4s, top 0.2s linear 0.2s
+    &::before
+        position: absolute
+        top: -10px
+        content: ''
+        display: block
+        width: 30px
+        height: 2px
+        background-color: #F1CDB3
+    &::after
+        position: absolute
+        top: 10px
+        content: ''
+        display: block
+        width: 30px
+        height: 2px
+        background-color: #F1CDB3
+    &.burger-active
+        transform: rotate(-90deg)
+.modal
+    display: none
+    position: fixed
+    top: 25%
+    right: 50%
+    transform: translateX(50%)
+    margin: auto
+    width: 900px
+    background-color: #FAFAFA
+    flex-direction: row
+    align-items: flex-start
+    border-radius: 10px
+    z-index: 9
+    transition: all .4s
+    &-btn
+        content: ''
+        width: 52px
+        height: 52px
+        position: absolute
+        top: -51px
+        right: -51px
+        background: url('../../assets/icons/close.svg') 50% 50% / 30% no-repeat
+        border: 2px solid #FDDCC4
+        border-radius: 100px
+        transition: all .3s
+        &:hover
+            cursor: pointer
+            background-color: #FDDCC4
+            transition: all .3s
+    &-content
+        display: flex
+        flex-direction: column
+        max-width: 350px
+        width: 100%
+        padding-left: 30px
+        height: 362px
+    &-img
+        width: 500px
+    &-title
+        padding-top: 51px
+    &-subtitle
+        padding-top: 10px
+        letter-spacing: 1.2px
+    &-description
+        padding-top: 40px
+        line-height: 115%
+        letter-spacing: 0.5px
+        font-size: 15px
+    &-list
+        padding-top: 41px
+        letter-spacing: 0.4px
+        &__item
+            padding-bottom: 12px
+            color: #000
+            &::before
+                content: '\2022'
+                color: #F1CDB3
+                margin-right: 3px
+.modal-disable
+    display: none
+.modal-active
+    display: flex
+.popup
+    position: fixed
+    background-color: rgba(41, 41, 41, 0.6)
+    z-index: 1
+    transition: 0.8s ease
+    opacity: 0
+    visibility: hidden
+    &-active
+        width: 100%
+        height: 100%
+        opacity: 1
+        visibility: visible
+.popup-modal
+    position: fixed
+    background-color: rgba(41, 41, 41, 0.6)
+    z-index: 1
+    transition: 0.8s ease
+    opacity: 0
+    visibility: hidden
+    &-active
+        width: 100%
+        height: 100%
+        opacity: 1
+        visibility: visible
+.disable
+    pointer-events: none
+@media screen and ( max-width: 1280px )
+    .modal
+        width: 630px
+        &-description
+            font-size: 13px
+            padding-top: 20px
+        &-img
+            width: 350px
+        &-content
+            padding-left: 12px
+            max-width: 250px
+            height: auto
+        &-title
+            padding-top: 12px
+        &-list
+            padding-top: 20px
+            &__item
+                padding-bottom: 7px
+                &::before
+                    content: '\2022'
+                    color: #F1CDB3
+                    margin-right: 8px
+    .container
+        max-width: 768px
+        width: 100%
+    .logo
+        padding-left: 30px
+        line-height: 37px
+    .header-nav
+        padding-top: 29px
+    .navbar-item:last-child
+        padding-right: 30px
+    .notonly
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding-top: 60px
+        &-text
+            padding-top: 0
+            text-align: center
+            padding-bottom: 110px
+        &-title, &-description
+            text-align: left
+        &-description
+            padding-bottom: 62px
+        &-img
+            padding-top: 7px
+            width: 569px
+            padding-left: 137px
+    .about
+        flex-direction: column
+        &-img
+            order: 2
+        &-text
+            order: 1
+            padding-left: 0
+            padding-bottom: 80px
+        &-description
+            max-width: 440px
+    .ourfriends
+        &-slider
+            justify-content: space-between
+            padding-bottom: 48px
+        &-title
+            padding-bottom: 60px
+    .slide
+        justify-content: space-between
+        max-width: 580px
+    .slick
+        &-list
+            width: 610px !important
+        &-slide
+            width: 580px !important
+            padding-bottom: 12px
+        &-prev
+            left: 32px !important
+        &-next
+            right: 32px !important
+        &-arrow
+            top: 17px
+    .card:nth-child(3)
+        overflow: hidden
+        width: 0px
+        height: 0px
+    .card:nth-child(2)
+        margin: 0
+        margin-right: -40px
+    .left-arrow
+        transform: translateX(30px)
+    .right-arrow
+        transform: translateX(-30px)
+    .help
+        padding-bottom: 98px
+        &-features
+            max-width: 760px
+            &__item
+                margin: 0 33px
+                width: 163px
+            &__item:nth-child(n+4):nth-child(-n+5)
+                margin-top: 56px
+    .donation
+        flex-direction: column
+        &-text
+            order: 1
+            padding-left: 0
+            padding-bottom: 58px
+        &-img
+            order: 2
+            padding-right: 0
+    .footer
+        flex-wrap: wrap
+        justify-content: center
+        padding-top: 49px
+        justify-content: space-evenly
+        &-title
+            padding-bottom: 39px
+    .adress-column
+        padding: 0
+        width: 304px
+    .contacts-column
+        width: 280px
+    .contacts
+        padding-bottom: 37px
+@media screen and ( max-width: 768px )
+
+    .modal
+        width: 240px
+        &-img
+            display: none
+        &-title
+            text-align: center
+        &-subtitle
+            text-align: center
+        &-list
+            padding-top: 38px
+            padding-bottom: 3px
+    .overflow
+        overflow: hidden
+    .logo-mobile
+        padding-right: 42px
+        display: flex
+        position: absolute
+        align-items: center
+        right: 50%
+        transform: translateX(50%)
+        top: 30px
+        width: 255px
+        transition: all 0.4s ease-out
+        overflow: hidden
+        z-index: 6
+    .logo-mobile-active
+        right: 0
+        transform: translateX(-54px)
+        padding-right: 0
+        transition: all 0.4s ease-out
+    .burger-wrapper
+        display: flex
+        z-index: 4
+        padding-left: 20px
+        z-index: 10
+    .navbar
+        position: fixed
+        right: -500px
+        top: 0
+        height: 100%
+        width: 320px
+        padding-top: 249px
+        flex-direction: column
+        text-align: center
+        margin: 0 auto
+        transition: all .4s ease
+        background-color: #292929
+        &-active
+            transition: all .4s ease
+            right: 0
+            z-index: 3
+        &-item
+            padding-bottom: 43px
+            padding-right: 0
+            &:last-child
+                padding-right: 0
+        &__link
+            font-size: 32px
+    .popup
+        position: fixed
+        background-color: rgba(41, 41, 41, 0.6)
+        z-index: 1
+        transition: 0.8s ease
+        opacity: 0
+        visibility: hidden
+        &-active
+            width: 100%
+            height: 100%
+            opacity: 1
+            visibility: visible
+    .container
+        max-width: 295px
+        width: 100%
+    .logo
+        padding-left: 0
+        padding-top: 1px
+        z-index: 4
+    .burger-wrapper
+        padding-left: 40px
+    .notonly
+        padding-top: 122px
+        &-title
+            font-size: 25px
+            text-align: center
+            letter-spacing: 1.4px
+        &-description
+            text-align: center
+            padding-bottom: 61px
+        &-img
+            width: 260px
+            padding-left: 45px
+            padding-top: 13px
+    .padding
+        padding-top: 122px
+    .about
+        padding-top: 42px
+        padding-bottom: 39px
+        &-title
+            font-size: 25px
+            text-align: center
+            letter-spacing: 1.6px
+        &-description
+            text-align: justify
+            margin: 0 auto
+            max-width: 270px
+        &-text
+            padding-bottom: 40px
+        &-img
+            width: 260px
+    .first-block
+        padding-bottom: 23px
+    .ourfriends
+        padding-top: 45px
+        padding-bottom: 43px
+        &-title
+            font-size: 25px
+            letter-spacing: 1.5px
+            padding-bottom: 41px
+    .slide
+        justify-content: space-around
+        width: 270px !important
+    .slick
+        &-slide
+            width: 290px !important
+            margin: 0 auto
+        &-list
+            width: 308px !important
+        &-track
+            width: 3000px !important
+        &-prev
+            order: 2
+            transform: translate(-103px, -10px)
+        &-next
+            order: 3
+            transform: translate(92px, -56px)
+    .card:nth-child(2)
+        overflow: hidden
+        width: 0px
+        height: 0px
+    .ourfriends-slider
+        flex-wrap: wrap
+        flex-direction: column
+        justify-content: flex-end
+        padding-bottom: 5px
+    .card
+        order: 1
+        &-title
+            padding-bottom: 30px
+    .left-arrow
+        order: 2
+        transform: translate(-66px, 21px)
+    .right-arrow
+        order: 3
+        transform: translate(66px, -31px)
+    .help
+        padding-top: 42px
+        padding-bottom: 10px
+        &-title
+            font-size: 25px
+            letter-spacing: 1.5px
+            max-width: 260px
+            padding-bottom: 43px
+        &-features
+            justify-content: space-between
+            &__title
+                font-size: 15px
+            &__item
+                margin: 0 0
+                width: 130px
+                align-items: center
+                padding-bottom: 27px
+                &:nth-child(n+4):nth-child(-n+5)
+                    margin-top: 0
+                &:nth-child(n+6):nth-child(-n+9)
+                    margin-top: 0
+            &__img
+                padding-bottom: 14px
+                height: 50px
+    .donation
+        padding-top: 43px
+        padding-bottom: 2px
+        &-text
+            justify-content: center
+            text-align: center
+            padding-bottom: 43px
+            &__title
+                font-size: 25px
+                text-align: center
+                letter-spacing: 1.5px
+                padding-bottom: 24px
+            &__subtitle
+                font-size: 15px
+                text-align: center
+                font-family: 'Arial',serif
+                letter-spacing: normal
+                padding-bottom: 26px
+        &-img
+            width: 260px
+    .card-number
+        box-sizing: border-box
+        font-size: 15px
+        padding: 10px 10px
+        width: 281px
+        margin-left: 6px
+    .credit-card
+        padding-right: 10px
+        padding-left: 5px
+    .paragraph-lite
+        padding-top: 20px
+        font-size: 12px
+        max-width: 290px
+        text-align: justify
+        line-height: 18px
+        max-width: 280px
+        margin: 0 auto
+    .footer
+        padding-top: 50px
+        text-align: center
+        &-title
+            padding-bottom: 42px
+        &-img
+            width: 260px
+    .email
+        padding-bottom: 42px
+    .contacts-column
+        padding-bottom: 5px
+    .adress-column
+        padding-bottom: 33px
+        &>.footer-title
+            padding-bottom: 35px
+    .adress
+        text-align: left
