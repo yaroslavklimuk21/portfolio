@@ -1,1 +1,1 @@
-https://yaroslavklimuk21.github.io/rsschool-cv/cv
+https://yaroslavklimuk21.github.io/portfolio/cv/
