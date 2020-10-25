@@ -564,6 +564,7 @@ button:active, button:focus {
 
 .credit-card {
   padding-right: 15px;
+  width: 30px;
 }
 
 .paragraph-lite {
@@ -700,7 +701,7 @@ footer {
 .modal {
   display: none;
   position: fixed;
-  top: 25%;
+  top: 15%;
   right: 50%;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
