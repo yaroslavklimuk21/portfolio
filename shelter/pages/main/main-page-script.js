@@ -105,14 +105,14 @@ let pets = [
 	},
 ];
 
-let card = document.getElementsByClassName("card-wrapper");
-for (let j = 0; j < card.length; j++) {
-	let random = Math.floor(Math.random() * 8);
-	card[j].children[0].src = pets[random][`img`];
-	card[j].children[0].alt = pets[random][`type`];
-	card[j].children[1].innerText = pets[random][`name`];
-	card[j].setAttribute("data-id", `${pets[random][`id`]}`);
-}
+// let card = document.getElementsByClassName("card-wrapper");
+// for (let j = 0; j < card.length; j++) {
+// 	let random = Math.floor(Math.random() * 8);
+// 	card[j].children[0].src = pets[random][`img`];
+// 	card[j].children[0].alt = pets[random][`type`];
+// 	card[j].children[1].innerText = pets[random][`name`];
+// 	card[j].setAttribute("data-id", `${pets[random][`id`]}`);
+// }
 window.onload = buttonsId;
 let prevArrow, nextArrow;
 function buttonsId() {
