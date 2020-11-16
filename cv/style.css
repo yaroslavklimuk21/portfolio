@@ -62,9 +62,9 @@ h1 {
 	justify-content: flex-start;
 	align-items: center;
 }
-.works__item:last-child {
+/* .works__item:last-child {
 	padding-left: 20px;
-}
+} */
 .works__item img {
 	width: 100px;
 }
@@ -72,6 +72,9 @@ h1 {
 	width: 50px;
 }
 .first-row > .works__item:nth-child(2) img {
+	width: 50px;
+}
+.first-row > .works__item:nth-child(3) img {
 	width: 50px;
 }
 .works__item {
