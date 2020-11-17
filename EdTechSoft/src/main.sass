@@ -52,6 +52,7 @@ b
   color: #000
   cursor: pointer
   transition: all .3s ease
+  outline: none
   &:hover
     background-color: #FFDE00
   &-active
@@ -194,8 +195,9 @@ section
       &__title,
         margin: 0 auto
         justify-content: center
-    &__content
-      margin: 0 auto
+      &__content
+        margin: 0 auto
+        justify-content: center
   .header-menu
     flex-wrap: wrap
   .logo
@@ -222,6 +224,7 @@ section
       text-align: center
     &__content
       flex-wrap: wrap
+      justify-content: flex-start
     &__price
       width: 100%
       justify-content: center

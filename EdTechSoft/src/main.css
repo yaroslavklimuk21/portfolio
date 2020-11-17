@@ -90,6 +90,7 @@ b {
   cursor: pointer;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
+  outline: none;
 }
 
 .btn:hover {
@@ -335,8 +336,11 @@ section::after {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .main__content {
+  .main-text__content {
     margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .header-menu {
     -ms-flex-wrap: wrap;
@@ -384,6 +388,9 @@ section::after {
   .main-text__content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .main-text__price {
     width: 100%;
