@@ -1,1 +1,120 @@
-
+$main-color: #fec110 //#E6C81E
+$grey: #252424
+body
+  font-family: 'Montserrat', sans-serif
+  overflow-x: hidden
+  color: #fff
+.container
+  max-width: 1320px
+  width: 100%
+  margin: 0 auto
+section
+  padding-left: 20px
+  padding-right: 20px
+.header
+  position: relative
+  width: 100%
+  margin: 0 auto
+  padding-bottom: 150px
+  background-color: $grey
+  &-social
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    width: 100%
+    padding-left: 0
+    padding-bottom: 5px
+    list-style: none
+    &__links
+      max-width: 20px
+      margin-left: 8px
+      margin-right: 8px
+      box-sizing: border-box
+      &>svg
+        max-width: 20px
+        width: 100%
+        fill: #d6d2d0
+        transition: fill .3s ease
+        &:hover
+          fill: #72706f
+.main
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  padding-top: 200px
+  padding-bottom: 30px
+  &-text
+    justify-content: flex-start
+    flex-direction: column
+    max-width: 40%
+    padding-left: 30px
+  &-photo
+    max-width: 220px
+    width: 100%
+    border-radius: 50%
+    border: 5px solid #3e3e3e
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, .8)
+  &-btn
+    padding: 10px 30px
+    font-size: 16px
+    background-color: $grey
+    border: 2px solid $main-color
+    border-radius: 30px
+    text-decoration: none
+    color: #fff
+    transition: all .3s ease-in
+    box-shadow: 0px 5px 12px 0px rgba(0,0,0,0.35)
+    &:hover
+      background-color: $main-color
+      text-decoration: none
+      color: #232323
+      transform: scale(2)
+.name
+  font-size: 42px
+  font-weight: 400
+  padding-bottom: 10px
+  color: #fff
+.speciality
+  font-size: 20px
+  padding-bottom: 10px
+  color: #807b7b
+.goal
+  padding-bottom: 30px
+  margin-bottom: 0
+  font-size: 17px
+  font-weight: 300
+  line-height: 24px
+  color: #d2cfcf
+section
+  background-color: $grey
+.section
+  &-title
+    display: inline-block
+    position: relative
+    margin-bottom: 50px
+    font-size: 1.5rem
+    font-weight: 500
+    color: #fff
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: -7px
+      width: 100%
+      height: 2px
+      background-color: #353535
+    &::after
+      content: ''
+      position: absolute
+      left: 0
+      bottom: -7px
+      width: 40%
+      max-width: 30px
+      height: 2px
+      background-color: $main-color
+  &-text
+    font-weight: 300
+    line-height: 1.7
+    color: #fff
+.about
+  padding-bottom: 60px
